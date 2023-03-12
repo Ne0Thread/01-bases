@@ -14,4 +14,10 @@ export class HeroeComponent{
     obtenerNombre(): string {
         return `${ this.nombre } - ${ this.edad }`;
     }
+    cambiarNombre(): void {
+        this.nombre = 'SpiderMan';
+    }
+    cambiarEdad(): void {
+        this.edad = 30;
+    }
 }
