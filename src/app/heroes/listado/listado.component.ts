@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent {
+  public heroes : string[]=['spiderman','ironMan','Hulk','Thor'];
+  public heroBorrado: string = '';
 
+  borrarHeroe(){
+    this.heroBorrado = this.heroes.pop() || '';
+    console.log(this.heroBorrado);
+  }
 }
