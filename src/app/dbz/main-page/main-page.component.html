@@ -2,16 +2,10 @@
 <hr>
 <div class="row">
     <div class="col">
-        <small>{{nuevo.nombre}}</small>
-        <h3>Personajes</h3>
-        <hr>
-        <ul *ngFor="let personaje of personajes">
-            {{personaje.nombre }}
-            {{personaje.poder}}
-        </ul>
+        <app-personajes [personajes]="personajes"></app-personajes>
     </div>
 
-    <div>
+    <div class="col">
         <h3>Agregar</h3>
         <hr>
 
