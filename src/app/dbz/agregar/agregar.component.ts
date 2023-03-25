@@ -7,7 +7,6 @@ import { Personaje } from '../interfaces/dbz.interface';
   styleUrls: ['./agregar.component.css']
 })
 export class AgregarComponent {
-  @Input() personajes:Personaje[]=[]
   @Input() nuevo:Personaje ={
     nombre :'',
     poder : 0
@@ -19,7 +18,7 @@ export class AgregarComponent {
       return;
     }
     console.log(this.nuevo);
-    this.personajes.push(this.nuevo);
+    
     this.nuevo ={
       nombre: '',
       poder:0
