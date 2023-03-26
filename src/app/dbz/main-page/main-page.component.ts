@@ -28,6 +28,11 @@ export class MainPageComponent {
   cambiarNombre(event:any){
     console.log(event.target.value)
   }
+  agregarNuevoPersonaje(argumento:Personaje){
+    // console.log('MAin page component')
+    // console.log(argumento);
+    this.personajes.push(argumento);
+  }
 
  
 
